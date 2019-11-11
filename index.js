@@ -12,10 +12,6 @@ server.use(helmet());
 server.use(express.json());
 server.use(cors());
 
-server.get('/', (req, res) => {
-  res.send("It's alive!");
-});
-
 server.post('/api/register', (req, res) => {
   let user = req.body;
   const hash = bcrypt.hashSync(user.password, 11)
@@ -46,7 +42,7 @@ server.post('/api/login', (req, res) => {
       }
     })
     .catch(error => {
-      res.status(500).json(error);
+      res.status(500).json(error, 'You shall not pass!');
     });
 });
 
