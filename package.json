@@ -1,0 +1,25 @@
+{
+  "name": "Introduction-to-authentication",
+  "version": "1.0.0",
+  "description": "- Authentication.\r - Express Middleware.\r - Password Hashing.\r - Sessions\r - Cookies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidKuseh/webauth-i-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidKuseh/webauth-i-challenge/issues"
+  },
+  "homepage": "https://github.com/DavidKuseh/webauth-i-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.1",
+    "sqlite": "^3.0.3"
+  }
+}
